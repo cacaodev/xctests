@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1750FEF41A40DFA900D05552 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750FEF31A40DFA900D05552 /* Tests.m */; };
+		1750FF001A419AD400D05552 /* NSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750FEFF1A419AD400D05552 /* NSOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1750FEF21A40D7D500D05552 /* NSOperation.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSOperation.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1750FEF31A40DFA900D05552 /* Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tests.m; path = NSOperation/Tests.m; sourceTree = "<group>"; };
+		1750FEFB1A419AD400D05552 /* NSOperation.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSOperation.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1750FEFE1A419AD400D05552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1750FEFF1A419AD400D05552 /* NSOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1750FEDF1A3F6B2000D05552 /* Frameworks */ = {
+		1750FEF81A419AD400D05552 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,37 +30,46 @@
 		1750FEC61A3F6B1E00D05552 = {
 			isa = PBXGroup;
 			children = (
-				1750FEF51A40E0A600D05552 /* NSOperation */,
-				1750FEF21A40D7D500D05552 /* NSOperation.xctest */,
+				1750FEFC1A419AD400D05552 /* NSOperation */,
+				1750FEFB1A419AD400D05552 /* NSOperation.xctest */,
 			);
 			sourceTree = "<group>";
 		};
-		1750FEF51A40E0A600D05552 /* NSOperation */ = {
+		1750FEFC1A419AD400D05552 /* NSOperation */ = {
 			isa = PBXGroup;
 			children = (
-				1750FEF31A40DFA900D05552 /* Tests.m */,
+				1750FEFF1A419AD400D05552 /* NSOperation.m */,
+				1750FEFD1A419AD400D05552 /* Supporting Files */,
 			);
-			name = NSOperation;
+			path = NSOperation;
+			sourceTree = "<group>";
+		};
+		1750FEFD1A419AD400D05552 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1750FEFE1A419AD400D05552 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1750FEE11A3F6B2000D05552 /* NSOperation */ = {
+		1750FEFA1A419AD400D05552 /* NSOperationTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1750FEEF1A3F6B2000D05552 /* Build configuration list for PBXNativeTarget "NSOperation" */;
+			buildConfigurationList = 1750FF011A419AD400D05552 /* Build configuration list for PBXNativeTarget "NSOperationTest" */;
 			buildPhases = (
-				1750FEDE1A3F6B2000D05552 /* Sources */,
-				1750FEDF1A3F6B2000D05552 /* Frameworks */,
-				1750FEE01A3F6B2000D05552 /* Resources */,
+				1750FEF71A419AD400D05552 /* Sources */,
+				1750FEF81A419AD400D05552 /* Frameworks */,
+				1750FEF91A419AD400D05552 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NSOperation;
-			productName = FoundationTestTests;
-			productReference = 1750FEF21A40D7D500D05552 /* NSOperation.xctest */;
+			name = NSOperationTest;
+			productName = NSOperation;
+			productReference = 1750FEFB1A419AD400D05552 /* NSOperation.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -71,9 +81,8 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Pear Inc";
 				TargetAttributes = {
-					1750FEE11A3F6B2000D05552 = {
+					1750FEFA1A419AD400D05552 = {
 						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 1750FECE1A3F6B1F00D05552;
 					};
 				};
 			};
@@ -90,13 +99,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1750FEE11A3F6B2000D05552 /* NSOperation */,
+				1750FEFA1A419AD400D05552 /* NSOperationTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1750FEE01A3F6B2000D05552 /* Resources */ = {
+		1750FEF91A419AD400D05552 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -106,11 +115,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1750FEDE1A3F6B2000D05552 /* Sources */ = {
+		1750FEF71A419AD400D05552 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1750FEF41A40DFA900D05552 /* Tests.m in Sources */,
+				1750FF001A419AD400D05552 /* NSOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,10 +202,9 @@
 			};
 			name = Release;
 		};
-		1750FEF01A3F6B2000D05552 /* Debug */ = {
+		1750FF021A419AD400D05552 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -208,15 +216,15 @@
 				);
 				INFOPLIST_FILE = NSOperation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = NSOperation;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoundationTest.app/Contents/MacOS/FoundationTest";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		1750FEF11A3F6B2000D05552 /* Release */ = {
+		1750FF031A419AD400D05552 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -224,8 +232,9 @@
 				);
 				INFOPLIST_FILE = NSOperation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = NSOperation;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoundationTest.app/Contents/MacOS/FoundationTest";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -241,14 +250,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1750FEEF1A3F6B2000D05552 /* Build configuration list for PBXNativeTarget "NSOperation" */ = {
+		1750FF011A419AD400D05552 /* Build configuration list for PBXNativeTarget "NSOperationTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1750FEF01A3F6B2000D05552 /* Debug */,
-				1750FEF11A3F6B2000D05552 /* Release */,
+				1750FF021A419AD400D05552 /* Debug */,
+				1750FF031A419AD400D05552 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

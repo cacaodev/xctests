@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
 
-@interface FoundationTestTests : XCTestCase
+@interface NSOperationTest : XCTestCase
 
 @end
 
@@ -18,7 +18,7 @@
 @property (assign) BOOL didMain;
 @end
 
-@implementation FoundationTestTests
+@implementation NSOperationTest
 
 - (void)setUp
 {
@@ -70,12 +70,12 @@
     XCTAssertFalse(op.isFinished);
     
     [op cancel];
-
+    
     XCTAssertTrue(op.isCancelled);
     XCTAssertFalse(op.isFinished);
-
+    
     [op start];
-
+    
     XCTAssertTrue(op.isCancelled);
     XCTAssertTrue(op.isFinished);
     XCTAssertTrue(results.count == 0);

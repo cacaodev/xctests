@@ -1,2 +1,2 @@
 language: objective-c
-script: xctool -workspace Foundation.xcworkspace -scheme FoundationTest test -only NSOperation
+script: xctool -workspace Foundation.xcworkspace -scheme FoundationTest test -only NSOperationTest
