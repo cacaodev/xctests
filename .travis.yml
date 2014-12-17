@@ -1,5 +1,5 @@
 language: objective-c
 xcode_workspace: Foundation.xcworkspace
 xcode_scheme: FoundationTest
-xcode_sdk: macosx10.9
-script: xcodebuild test
+xcode_sdk: macosx10.10
+script: xctool test
